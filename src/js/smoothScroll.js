@@ -2,6 +2,8 @@
     let eventType = window.ontouchstart ? 'touchtart' : 'click';
 
     const scrollTriggers = document.querySelectorAll('a[href^="#"]');
+    const subHeader = document.querySelector('.sub-header');
+    const menuButton = document.querySelector('.menu-button');
 
     scrollTriggers.forEach((scrollTrigger, i) => {
         scrollTrigger.addEventListener(eventType, (e) => {
@@ -10,6 +12,10 @@
             const targetPosition = targetCalc(scrollTrigger, i);
 
             scrollToAction(targetPosition);
+
+            subHeader.classList.remove('menu-open');
+            menuButton.classList.remove('close-button');
+            
         });
     });
 })();
