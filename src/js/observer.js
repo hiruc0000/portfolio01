@@ -5,7 +5,7 @@
     const observer = new IntersectionObserver(callback, options = {
         rootMargin: '-10% 0px 0px'
     });
-    const observer2 = new IntersectionObserver(callback2, options = {rootMargin: '-30% 0px'});
+    const observer2 = new IntersectionObserver(callback2, options = {rootMargin: '-20% 0px'});
 
     observer.observe(section);
 
