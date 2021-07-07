@@ -744,9 +744,9 @@ section#sample-detail {
                                     transition: color 0.4s, background-color 0.4s;
                                     @include m.buttonStyle;
 
-                                    &:hover {
-                                        @include m.buttonHovered;
-                                    }
+                                    // &:hover {
+                                        // @include m.buttonHovered;
+                                    // }
                                 }
                             }
                         }
