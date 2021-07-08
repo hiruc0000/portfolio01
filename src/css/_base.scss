@@ -220,7 +220,7 @@ body {
             transform: scaleY(0);
             opacity: 0;
             transition: transform 0.3s, opacity 0.3s;
-            
+
             &.menu-open {
                 transform: scaleY(1);
                 opacity: 1;
@@ -325,7 +325,50 @@ body {
             border-left: 2px solid c.$bgWhite;
             border-bottom: 2px solid c.$bgWhite;
             transform: rotate(-45deg);
+            animation-name: scrollButtonAnimation;
+            @include m.animation;
+            animation-duration: 1.8s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
         }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 10px;
+            width: 20px;
+            height: 20px;
+            border-left: 2px solid c.$bgWhite;
+            border-bottom: 2px solid c.$bgWhite;
+            transform: rotate(-45deg);
+            animation-name: scrollButtonAnimation;
+            @include m.animation;
+            animation-duration: 1.8s;
+            animation-iteration-count: infinite;
+            // animation-delay: 0.5s;
+            animation-direction: alternate-reverse;
+        }
+    }
+}
+
+@keyframes scrollButtonAnimation {
+    0% {
+        opacity: 1;
+        transform: rotate(-45deg) translate(3px, -3px);
+    }
+    30% {
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(-45deg) translate(-3px, 3px);
     }
 }
 
@@ -383,7 +426,7 @@ section {
             line-height: 1.8rem;
 
             // span {
-                // display: inline-block;
+            // display: inline-block;
             // }
 
             br {
@@ -399,7 +442,7 @@ section {
             transition: color 0.4s, background-color 0.4s;
 
             // &:hover {
-                // @include m.buttonHovered;
+            // @include m.buttonHovered;
             // }
         }
     }
@@ -512,7 +555,7 @@ section {
                     line-height: 1.8rem;
                     text-align: center;
 
-                    p{
+                    p {
                         br {
                             display: none;
                         }
@@ -676,9 +719,9 @@ section#sample-detail {
                 width: 100%;
 
                 // @for $i from 1 through 5 {
-                    // &:nth-of-type(#{$i}) {
-                        // animation-delay: 0.1s * $i;
-                    // }
+                // &:nth-of-type(#{$i}) {
+                // animation-delay: 0.1s * $i;
+                // }
                 // }
 
                 .flex-inner {
@@ -688,7 +731,7 @@ section#sample-detail {
                     box-shadow: 0 0 15px 1px rgba(c.$bgBlack, 0.3);
 
                     // &:hover .image img {
-                        // transform: scale(1.1);
+                    // transform: scale(1.1);
                     // }
 
                     .image {
@@ -745,7 +788,7 @@ section#sample-detail {
                                     @include m.buttonStyle;
 
                                     // &:hover {
-                                        // @include m.buttonHovered;
+                                    // @include m.buttonHovered;
                                     // }
                                 }
                             }

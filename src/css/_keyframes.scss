@@ -1,0 +1,10 @@
+@keyframes navAppear {
+    0%{
+        top: 0;
+        opacity: 0;
+    }
+    100%{
+        top: 18px;
+        opacity: 1;
+    }
+}

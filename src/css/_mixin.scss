@@ -57,7 +57,7 @@
 
 @mixin animation {
     animation-duration: 0.4s;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
     animation-delay: 0;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
