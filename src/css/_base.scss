@@ -320,8 +320,8 @@ body {
             position: absolute;
             top: 6px;
             left: 10px;
-            width: 20px;
-            height: 20px;
+            width: 18px;
+            height: 18px;
             border-left: 2px solid c.$bgWhite;
             border-bottom: 2px solid c.$bgWhite;
             transform: rotate(-45deg);
@@ -337,8 +337,8 @@ body {
             position: absolute;
             top: 6px;
             left: 10px;
-            width: 20px;
-            height: 20px;
+            width: 18px;
+            height: 18px;
             border-left: 2px solid c.$bgWhite;
             border-bottom: 2px solid c.$bgWhite;
             transform: rotate(-45deg);
@@ -355,7 +355,7 @@ body {
 @keyframes scrollButtonAnimation {
     0% {
         opacity: 1;
-        transform: rotate(-45deg) translate(3px, -3px);
+        transform: rotate(-45deg) translate(4px, -4px);
     }
     30% {
         opacity: 0.5;
