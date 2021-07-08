@@ -488,8 +488,8 @@ body {
 @-webkit-keyframes scrollButtonAnimation {
   0% {
     opacity: 1;
-    -webkit-transform: rotate(-45deg) translate(4px, -4px);
-            transform: rotate(-45deg) translate(4px, -4px);
+    -webkit-transform: rotate(-45deg) translate(3px, -3px);
+            transform: rotate(-45deg) translate(3px, -3px);
   }
   30% {
     opacity: 0.5;
@@ -502,16 +502,16 @@ body {
   }
   100% {
     opacity: 1;
-    -webkit-transform: rotate(-45deg) translate(-3px, 3px);
-            transform: rotate(-45deg) translate(-3px, 3px);
+    -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+            transform: rotate(-45deg) translate(-4px, 4px);
   }
 }
 
 @keyframes scrollButtonAnimation {
   0% {
     opacity: 1;
-    -webkit-transform: rotate(-45deg) translate(4px, -4px);
-            transform: rotate(-45deg) translate(4px, -4px);
+    -webkit-transform: rotate(-45deg) translate(3px, -3px);
+            transform: rotate(-45deg) translate(3px, -3px);
   }
   30% {
     opacity: 0.5;
@@ -524,8 +524,8 @@ body {
   }
   100% {
     opacity: 1;
-    -webkit-transform: rotate(-45deg) translate(-3px, 3px);
-            transform: rotate(-45deg) translate(-3px, 3px);
+    -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+            transform: rotate(-45deg) translate(-4px, 4px);
   }
 }
 section {
