@@ -267,6 +267,7 @@ body {
           transform: scaleX(0.9);
 }
 .hero .header div.main-header nav .menu-button {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
