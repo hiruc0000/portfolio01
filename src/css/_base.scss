@@ -4,6 +4,28 @@
 // ********************************************************
 // ******************* FIRST VIEW *************************
 // ********************************************************
+
+// ************* HERO IMAGE ANIMATION *********************
+@keyframes heroAnimation {
+    0%{
+        opacity: 0.1;
+    }
+    5%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    45%{
+        opacity: 0;
+        transform: scale(1.25);
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
 body {
     font-family: 'Raleway', 'Kosugi', sans-serif;
 }
@@ -21,11 +43,45 @@ body {
     position: relative;
     width: 100%;
     height: calc(100vh - 20px);
-    background: url(../images/hero.jpg);
-    @include m.bg-image;
+    overflow: hidden;
 
-    &::before {
-        @include m.mask;
+    .hero-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        &::before {
+            @include m.mask;
+        }
+
+        &.hero-image01 {
+            background: url(../images/hero.jpg);
+            opacity: 0;
+            @include m.bg-image;
+            animation-name: heroAnimation;
+            @include m.heroAnimationConf;
+            animation-delay: 0;
+        }
+
+        &.hero-image02 {
+            background: url(../images/footer.jpg);
+            opacity: 0;
+            @include m.bg-image;
+            animation-name: heroAnimation;
+            @include m.heroAnimationConf;
+            animation-delay: 7s;
+        }
+
+        &.hero-image03 {
+            background: url(../images/study.jpg);
+            opacity: 0;
+            @include m.bg-image;
+            animation-name: heroAnimation;
+            @include m.heroAnimationConf;
+            animation-delay: 14s;
+        }
     }
 
     .title {
@@ -67,6 +123,7 @@ body {
             padding: 0 1rem;
 
             h2 {
+                position: relative;
                 padding-top: 0.5rem;
 
                 a {
@@ -357,15 +414,19 @@ body {
         opacity: 1;
         transform: rotate(-45deg) translate(3px, -3px);
     }
+
     30% {
         opacity: 0.5;
     }
-    50%{
+
+    50% {
         opacity: 1;
     }
+
     70% {
         opacity: 0.5;
     }
+
     100% {
         opacity: 1;
         transform: rotate(-45deg) translate(-4px, 4px);

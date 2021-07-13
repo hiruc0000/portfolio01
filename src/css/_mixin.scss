@@ -62,3 +62,9 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+
+@mixin heroAnimationConf {
+    animation-duration: 21s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
