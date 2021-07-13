@@ -1,14 +1,14 @@
 @-webkit-keyframes heroAnimation {
   0% {
-    opacity: 0.1;
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
-  5% {
+  10% {
     opacity: 1;
   }
-  30% {
-    opacity: 1;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+  34% {
+    opacity: 0.9;
   }
   45% {
     opacity: 0;
@@ -21,15 +21,15 @@
 }
 @keyframes heroAnimation {
   0% {
-    opacity: 0.1;
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
-  5% {
+  10% {
     opacity: 1;
   }
-  30% {
-    opacity: 1;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+  34% {
+    opacity: 0.9;
   }
   45% {
     opacity: 0;
