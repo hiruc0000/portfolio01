@@ -737,8 +737,11 @@ section {
 
 .sample-hero {
     height: 350px;
-    background: url(../images/sample01.jpg);
-    @include m.bg-image;
+    
+    .sample-background {
+        background: url(../images/sample01.jpg);
+        @include m.bg-image;
+    }
 
     .title {
         top: 50%;

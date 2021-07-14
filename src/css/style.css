@@ -912,6 +912,8 @@ section .section-image h2 {
 
 .sample-hero {
   height: 350px;
+}
+.sample-hero .sample-background {
   background: url(../images/sample01.jpg);
   background-position: center;
   background-repeat: no-repeat;
