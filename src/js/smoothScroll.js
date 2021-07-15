@@ -1,5 +1,5 @@
 (() => {
-    let eventType = window.ontouchstart ? 'touchtart' : 'click';
+    let eventType = window.ontouchstart ? 'touchstart' : 'click';
 
     const scrollTriggers = document.querySelectorAll('a[href^="#"]');
     const subHeader = document.querySelector('.sub-header');
