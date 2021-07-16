@@ -137,7 +137,7 @@ body {
 }
 .hero .title {
   position: absolute;
-  top: 28%;
+  top: 25%;
 }
 .hero .title h1 {
   margin: 0;
@@ -1114,7 +1114,7 @@ section#sample-detail .container .flex-box .flex-outer .flex-inner .link ul li a
     height: calc(100vh - 40px);
   }
   .hero .title {
-    top: 30%;
+    top: 28%;
   }
   .hero .title p {
     text-align: left;
