@@ -123,7 +123,7 @@
                     width: 50%;
                     min-height: 350px;
     
-                    @for $i from 1 through 5 {
+                    @for $i from 1 through 2 {
                         &:nth-of-type(#{$i}) {
                             animation-delay: 0.1s * $i;
                         }

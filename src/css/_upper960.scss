@@ -198,6 +198,12 @@
                 .flex-outer {
                     max-width: 450px;
 
+                    @for $i from 1 through 3 {
+                        &:nth-of-type(#{$i}) {
+                            animation-delay: 0.1s * $i;
+                        }
+                    }
+
                     .flex-inner {
                         &:hover .image img {
                             transform: scale(1.1);
