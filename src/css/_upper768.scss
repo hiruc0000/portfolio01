@@ -6,54 +6,54 @@
     .wrapper {
         padding: 35px;
     }
-    
+
     .hero {
         height: calc(100vh - 70px);
-    
+
         .title {
             top: 30%;
         }
     }
-    
+
     // ****************** HEADER ************************
     .hero {
         .header {
             div.main-header {
                 h2 {
                     padding-top: 0.5rem;
-    
+
                     a {
                         text-decoration: none;
                         color: c.$whiteFont;
                     }
                 }
-    
+
                 nav {
                     display: flex;
                     flex-direction: row;
-    
+
                     //* ************** Humberger Button *********************
                 }
-    
+
                 //**************** Header Nav Fixed ***********************
             }
-    
+
             &.header-nav-fixed {
                 width: calc(100% - 70px);
             }
         }
     }
-    
+
     //* ************** SmartPhone Menu *********************
-    
-    
+
+
     // **************** Scroll Button **********************
-    
+
 
     // ********************************************************
     // ******************* Section 共通 ***********************
     // ********************************************************
-    
+
 
     // ********************************************************
     // *********************** SAMPLE *************************
@@ -67,25 +67,25 @@
     // ********************************************************
     // *********************** ABOUT **************************
     // ********************************************************
-    
+
     .about {
         .flex-box {
             width: 95%;
         }
     }
-    
+
     // ********************************************************
     // ********************** FOOTER **************************
     // ********************************************************
     .footer {
         padding-top: 50px;
-    
+
         .footer-image {
             .footer-inner {
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: flex-start;
-    
+
                 .inner-item {
                     &:nth-of-type(n+2) {
                         margin-top: 0;
@@ -94,41 +94,35 @@
             }
         }
     }
-    
-    
+
+
     // ********************************************************
     // **************** Sample/index.html *********************
     // ********************************************************
-    
+
     .sample-hero {
         height: 350px;
-    
+
         .title {
             top: 50%;
             transform: translateY(-50%);
         }
     }
-    
+
     section#sample-detail {
         width: 100%;
-    
+
         .container {
             .flex-box {
                 flex-direction: row;
                 flex-wrap: wrap;
                 // margin-top: 1rem;
-    
+
                 .flex-outer {
                     padding: 0.5rem;
                     width: 50%;
                     min-height: 350px;
-    
-                    @for $i from 1 through 2 {
-                        &:nth-of-type(#{$i}) {
-                            animation-delay: 0.1s * $i;
-                        }
-                    }
-    
+
                     .flex-inner {
                         justify-content: space-between;
                         height: 100%;
@@ -137,19 +131,19 @@
                             width: 100%;
                             min-height: 235px;
                         }
-    
+
                         .link {
                             ul {
                                 li {
                                     // &:nth-oftype(2) {
                                     // margin-left: 1rem;
                                     // }
-    
+
                                     a {
                                         width: 145px;
-    
+
                                         // &:hover {
-                                            // @include m.buttonHovered;
+                                        // @include m.buttonHovered;
                                         // }
                                     }
                                 }
@@ -160,10 +154,25 @@
             }
         }
     }
-    
-    
+
+
     // ********************************************************
     // ************** Fade Slide Animation ********************
     // ********************************************************
-    
+    section#sample-detail {
+        .container {
+            .flex-box {
+                .flex-outer {
+
+                    &:nth-of-type(odd) {
+                        animation-delay: 0.1s;
+                    }
+                    
+                    &:nth-of-type(even) {
+                        animation-delay: 0.2s;
+                    }
+                }
+            }
+        }
+    }
 }
